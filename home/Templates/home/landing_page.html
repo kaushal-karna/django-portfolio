@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Kaushal Karn | Portfolio{% endblock %}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'home/css/landing_page.css' %}"> 
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section with Glass Profile Card -->
+<section class="glass-panel hero">
+    <div class="hero-copy reveal-in">
+        <h1 class="hero-title">Digital Architect & Full-Stack Developer.</h1>
+        <p>I design futuristic interfaces and robust backend web applications that blend crystal-clear visual aesthetics with elite functionality.</p>
+        <div class="hero-actions">
+            <a href="/about/" class="btn">Explore Profile</a>
+            <a href="/contact/" class="theme-toggle-btn hero-secondary-btn">Let's Talk</a>
+        </div>
+    </div>
+
+    <div class="hero-visual reveal-in hero-visual-delay">
+        <div class="hero-glow"></div>
+        <div class="glass-panel hero-card">
+            <div class="hero-avatar">
+                <img src="https://avatars.githubusercontent.com/u/98377921?v=4" alt="Kaushal Karn">
+            </div>
+            <h3>Kaushal Karn</h3>
+            <span class="hero-role">BSc. CSIT Student</span>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Grid Bar -->
+<section class="stats-grid">
+    <div class="glass-panel stat-card">
+        <h2>3+</h2>
+        <p>Years Learning</p>
+    </div>
+    <div class="glass-panel stat-card">
+        <h2>15+</h2>
+        <p>Projects Built</p>
+    </div>
+    <div class="glass-panel stat-card">
+        <h2>100%</h2>
+        <p>Commitment</p>
+    </div>
+    <div class="glass-panel stat-card">
+        <h2>A+</h2>
+        <p>Academic Grade</p>
+    </div>
+</section>
+
+<!-- Quick Navigation Feature Cards -->
+<section class="nav-section">
+    <h2>Platform Navigator</h2>
+    <div class="nav-grid">
+        
+        <div class="glass-panel nav-card">
+            <h3><span class="icon-badge">🚀</span> Professional Experience</h3>
+            <p>Review my internships, Python workflows, and collaborative version control history.</p>
+            <a href="/experience/" class="btn nav-btn">View Experience</a>
+        </div>
+
+        <div class="glass-panel nav-card">
+            <h3><span class="icon-badge">📜</span> Certifications</h3>
+            <p>Verify completed technical courses, workshops, and continuous learning milestones.</p>
+            <a href="/certifications/" class="btn nav-btn">View Certificates</a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

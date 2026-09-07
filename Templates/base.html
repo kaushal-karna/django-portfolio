@@ -1,0 +1,61 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kaushal Karn | Portfolio{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Global CSS --> 
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="/" class="logo">KAUSHAL<span>.</span></a>
+        
+        <div class="nav-right-group">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+            <li><a href="/experience/">Experience</a></li>
+            <li><a href="/certifications/">Certifications</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+
+          <!-- Theme Toggle Button -->
+          <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            💡
+          </button>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 <strong>Kaushal Karn</strong>. All rights reserved.</p>
+        <p class="footer-sub">Designed with precision &middot; Built with Django</p>
+      </div>
+    </footer>
+
+    <!-- Project-level JavaScript --> 
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+  </body>
+</html>

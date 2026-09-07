@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Certifications | MySite{% endblock %}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'home/css/certification.css' %}"> 
+{% endblock %}
+
+{% block content %}
+
+<section class="certifications">
+
+    <div class="glass-panel certifications-header">
+        <h1>Certifications & Achievements</h1>
+        <p>
+            Here are some of the certifications, courses, workshops,
+            and learning achievements I have completed during my
+            academic and professional journey.
+        </p>
+    </div>
+
+    <div class="cert-grid">
+
+        <div class="certification-card glass-panel">
+            <h2><span class="icon-badge">🐍</span> Python Programming</h2>
+            <h3>Python Development</h3>
+            <p>
+                Completed practical learning and programming exercises
+                focused on Python fundamentals, problem solving,
+                functions, data structures, and object-oriented programming.
+            </p>
+            <div class="badge-row cert-skills">
+                <span class="badge">Python</span>
+                <span class="badge">OOP</span>
+                <span class="badge">Data Structures</span>
+            </div>
+        </div>
+
+        <div class="certification-card glass-panel">
+            <h2><span class="icon-badge">🌐</span> Django Web Development</h2>
+            <h3>Django Workshop</h3>
+            <p>
+                Completed a Django web development workshop covering
+                Django projects, applications, URLs, views, templates,
+                models, migrations, and database integration.
+            </p>
+            <div class="badge-row cert-skills">
+                <span class="badge">Python</span>
+                <span class="badge">Django</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">SQLite</span>
+            </div>
+        </div>
+
+        <div class="certification-card glass-panel">
+            <h2><span class="icon-badge">📊</span> DataCamp Python Learning</h2>
+            <h3>Python Learning Program</h3>
+            <p>
+                Completed Python learning modules and practical exercises
+                through an online learning platform, focusing on Python
+                programming and data-related concepts.
+            </p>
+            <div class="badge-row cert-skills">
+                <span class="badge">Python</span>
+                <span class="badge">Data Analysis</span>
+                <span class="badge">Programming</span>
+            </div>
+        </div>
+
+        <div class="certification-card glass-panel">
+            <h2><span class="icon-badge">🤖</span> Machine Learning</h2>
+            <h3>Machine Learning Projects</h3>
+            <p>
+                Gained practical experience with machine learning
+                algorithms through academic and personal projects,
+                including classification and model evaluation.
+            </p>
+            <div class="badge-row cert-skills">
+                <span class="badge">Python</span>
+                <span class="badge">KNN</span>
+                <span class="badge">Logistic Regression</span>
+                <span class="badge">Random Forest</span>
+            </div>
+        </div>
+
+        <div class="certification-card glass-panel">
+            <h2><span class="icon-badge">🔧</span> Git & GitHub</h2>
+            <h3>Version Control</h3>
+            <p>
+                Developed practical knowledge of Git and GitHub,
+                including repositories, commits, branches, merging,
+                remote repositories, and SSH authentication.
+            </p>
+            <div class="badge-row cert-skills">
+                <span class="badge">Git</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">SSH</span>
+                <span class="badge">Version Control</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="glass-panel certification-note">
+        <h2>Continuous Learning</h2>
+        <p>
+            I believe learning never stops. I continuously take
+            courses, attend workshops, build projects, and explore
+            new technologies to improve my technical skills.
+        </p>
+    </div>
+
+</section>
+
+{% endblock %}

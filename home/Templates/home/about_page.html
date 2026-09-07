@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Me | MySite{% endblock %}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'home/css/about_page.css' %}"> 
+{% endblock %}
+
+{% block content %}
+
+<section class="about">
+
+    <div class="glass-panel about-intro reveal-in">
+        <div class="about-avatar">
+            <img src="https://avatars.githubusercontent.com/u/98377921?v=4" alt="Kaushal Karn">
+        </div>
+        <div>
+            <h1>About Me</h1>
+            <h2 class="about-name">Kaushal Karn</h2>
+            <p>
+                Hello! My name is Kaushal Karn. I am a BSc.CSIT student
+                interested in software development and web development.
+                I enjoy learning new technologies and building practical
+                applications.
+            </p>
+        </div>
+    </div>
+
+    <div class="about-grid">
+        <div class="glass-panel about-block">
+            <h2><span class="icon-badge">🎓</span> Education</h2>
+            <p>
+                I am currently studying BSc.CSIT at Mahendra Morang Aadarsh
+                Multiple Campus, Tribhuvan University, Biratnagar, Nepal.
+            </p>
+        </div>
+
+        <div class="glass-panel about-block">
+            <h2><span class="icon-badge">🎯</span> Goal</h2>
+            <p>
+                My goal is to become a skilled software developer and build
+                useful real-world applications while continuously improving
+                my programming and problem-solving skills.
+            </p>
+        </div>
+    </div>
+
+    <div class="glass-panel about-block">
+        <h2><span class="icon-badge">🛠️</span> Skills</h2>
+        <div class="badge-row">
+            <span class="badge">Python</span>
+            <span class="badge">Django</span>
+            <span class="badge">C / C++</span>
+            <span class="badge">HTML & CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Git & GitHub</span>
+            <span class="badge">MySQL / SQLite</span>
+        </div>
+    </div>
+
+    <div class="glass-panel about-block">
+        <h2><span class="icon-badge">💡</span> Interests</h2>
+        <div class="badge-row">
+            <span class="badge">Web Development</span>
+            <span class="badge">Backend Development</span>
+            <span class="badge">Artificial Intelligence</span>
+            <span class="badge">Machine Learning</span>
+            <span class="badge">Open Source</span>
+        </div>
+    </div>
+
+    <div class="glass-panel about-block">
+        <h2><span class="icon-badge">📂</span> Projects</h2>
+        <div class="mini-card-grid">
+            <div class="mini-card">Django E-commerce Application</div>
+            <div class="mini-card">Django Blog Application</div>
+            <div class="mini-card">Git Learning Platform</div>
+            <div class="mini-card">AdvanceSpotify</div>
+            <div class="mini-card">Machine Learning Projects</div>
+        </div>
+    </div>
+
+    <div class="glass-panel about-block about-contact">
+        <h2><span class="icon-badge">📬</span> Contact</h2>
+        <p>GitHub: <a href="https://github.com/kaushal-karna" target="_blank" rel="noopener">kaushal-karna</a></p>
+    </div>
+
+</section>
+
+{% endblock %}

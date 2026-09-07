@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Experience | MySite{% endblock %}
+
+{% block extra_css %} 
+<link rel="stylesheet" href="{% static 'home/css/experience.css' %}"> 
+{% endblock %}
+
+{% block content %}
+
+<section class="experience">
+
+    <div class="glass-panel experience-header">
+        <h1>My Experience</h1>
+        <p>
+            Here is a summary of my learning, internship, workshop,
+            and practical development experience.
+        </p>
+    </div>
+
+    <div class="exp-grid">
+
+        <div class="experience-card glass-panel">
+            <h2><span class="icon-badge">🐍</span> Python Programming Internship</h2>
+            <h3>Oasis Infobyte</h3>
+            <p>
+                Worked on Python programming tasks and practical projects
+                as part of an internship program. The experience helped me
+                improve my programming, problem-solving, and project
+                development skills.
+            </p>
+            <div class="badge-row exp-skills">
+                <span class="badge">Python</span>
+                <span class="badge">Git</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">Problem Solving</span>
+            </div>
+        </div>
+
+        <div class="experience-card glass-panel">
+            <h2><span class="icon-badge">🌐</span> Django Web Development Workshop</h2>
+            <h3>Django Development</h3>
+            <p>
+                Learned the fundamentals of Django web development,
+                including project structure, applications, views,
+                templates, URLs, models, migrations, and template
+                inheritance.
+            </p>
+            <div class="badge-row exp-skills">
+                <span class="badge">Python</span>
+                <span class="badge">Django</span>
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">SQLite</span>
+            </div>
+        </div>
+
+        <div class="experience-card glass-panel">
+            <h2><span class="icon-badge">🤖</span> Machine Learning Projects</h2>
+            <h3>Academic & Personal Projects</h3>
+            <p>
+                Worked on machine learning projects using Python and
+                popular machine learning libraries. Practiced data
+                preprocessing, model training, evaluation, and
+                classification.
+            </p>
+            <div class="badge-row exp-skills">
+                <span class="badge">Python</span>
+                <span class="badge">Machine Learning</span>
+                <span class="badge">KNN</span>
+                <span class="badge">Logistic Regression</span>
+                <span class="badge">Random Forest</span>
+            </div>
+        </div>
+
+        <div class="experience-card glass-panel">
+            <h2><span class="icon-badge">🔧</span> Git & GitHub Projects</h2>
+            <h3>Version Control</h3>
+            <p>
+                Practiced Git and GitHub for managing software projects,
+                including branches, commits, merging, remote repositories,
+                SSH authentication, and collaborative development.
+            </p>
+            <div class="badge-row exp-skills">
+                <span class="badge">Git</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">Branching</span>
+                <span class="badge">SSH</span>
+            </div>
+        </div>
+
+        <div class="experience-card glass-panel">
+            <h2><span class="icon-badge">💻</span> Web Development Projects</h2>
+            <h3>Personal Projects</h3>
+            <p>
+                Built and practiced different web development projects
+                using HTML, CSS, JavaScript, Python, and Django.
+                These projects helped me understand both frontend and
+                backend development.
+            </p>
+            <div class="badge-row exp-skills">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Python</span>
+                <span class="badge">Django</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="glass-panel experience-goal">
+        <h2>Learning & Growth</h2>
+        <p>
+            I am continuously improving my technical skills by
+            building projects, learning new technologies, participating
+            in workshops, and practicing problem-solving.
+        </p>
+    </div>
+
+</section>
+
+{% endblock %}

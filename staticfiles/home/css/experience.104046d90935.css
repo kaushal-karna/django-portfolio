@@ -1,0 +1,56 @@
+.experience {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-header {
+    text-align: center;
+}
+
+.experience-header p {
+    max-width: 700px;
+    margin: 15px auto 0;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+}
+
+.experience-card h2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+}
+
+.experience-card h3 {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: -4px;
+}
+
+.exp-skills {
+    margin-top: 6px;
+}
+
+.experience-goal {
+    text-align: center;
+}
