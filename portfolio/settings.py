@@ -40,6 +40,10 @@ ALLOWED_HOSTS = [
     for host in os.environ.get('DJANGO_ALLOWED_HOSTS', '*').split(',')
     if host.strip()
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://kaushal-karn.onrender.com',
+    'https://*.onrender.com',
+]
 
 SECURE_SSL_REDIRECT = os.environ.get('DJANGO_SECURE_SSL_REDIRECT', 'False').lower() == 'true'
 SESSION_COOKIE_SECURE = os.environ.get('DJANGO_SESSION_COOKIE_SECURE', 'False').lower() == 'true'

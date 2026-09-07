@@ -54,7 +54,6 @@
             <h2>Send Me a Message</h2>
 
             <form method="POST" action={% url "contact" %} class="contact-form">
-
                 {% csrf_token %}
                 <div class="form-group">
                     <label for="name">Name</label>
