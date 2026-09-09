@@ -1,15 +1,10 @@
 import os
 import json
 import urllib.request
-import urllib.error
-
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.conf import settings
 from django.contrib import messages
-
-from .models import ContactMessage
-
 
 def send_brevo_email(to_email, to_name, subject, html_content):
     """Sends an email using the Brevo HTTPS REST API (Port 443)."""
@@ -71,7 +66,6 @@ def homepage(request):
 def about(request):
     return render(request, 'home/about_page.html')
 
-
 def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name', '').strip()
@@ -86,17 +80,9 @@ def contact(request):
             )
             return render(request, 'home/contact_page.html')
 
-        # 1. Save to Database
-        try:
-            ContactMessage.objects.create(
-                name=name,
-                email=email,
-                message=message_text
-            )
-        except Exception:
-            pass
+        # NO DATABASE SAVING HERE - Direct email dispatch only
 
-        # 2. Email Notification to Site Owner (Kaushal)
+        # 1. Email Notification to You (Kaushal)
         owner_email = getattr(settings, 'OWNER_EMAIL', None) or os.environ.get('OWNER_EMAIL', '')
         admin_subject = f"[Kaushal-Portfolio] New message from {name}"
         admin_html = f"""
@@ -117,7 +103,7 @@ def contact(request):
             html_content=admin_html
         )
 
-        # 3. Confirmation Email to the Visitor
+        # 2. Confirmation Email to the Visitor
         visitor_subject = "[Kaushal-Portfolio] Thank you for contacting me"
         visitor_html = f"""
         <!DOCTYPE html>
